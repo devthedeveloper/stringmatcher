@@ -3,7 +3,7 @@
 This is a very small, and simple string matcher that scans for words or strings. Its inspired by the concept of machine learning.
 
 ## Description
-This version returns an array of matched words, or an empty array if none were found.
+This package returns an array of matched words, or an empty array if none were found.
 
 ### Example Usage
 
