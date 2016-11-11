@@ -7,11 +7,11 @@ This version returns an array of matched words, or an empty array if none were f
 ### Example Usage
 
 ```js
-var string_matcher = require('String_Matcher');
-var sm = new string_matcher()
-sm.scan('hello there!') // returns []
-sm.add(['hello']) // add method
-sm.scan('hello there!') // returns ['hello']
-
-sm.remove_word('hello') // returns true if removed
+var String_Matcher = require('stringmatcher')
+var sm = new String_Matcher()
+console.log(sm.scan('hello there!')) // returns [] 
+console.log(sm.add_word(['p'])) // add method 
+console.log(sm)
+console.log(sm.scan('hello there!')) // returns ['hello'] 
+console.log(sm.remove_word('p')) // returns true if removed 
 ```

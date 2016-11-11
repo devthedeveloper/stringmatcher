@@ -1,7 +1,7 @@
 var fs = require('fs')
 var async = require('async');
 
-function String_Matcher() {
+function stringmatcher() {
 
     this.badwords = fs.readFileSync(__dirname + '/words.csv').toString().split(",");
 
@@ -70,11 +70,11 @@ function String_Matcher() {
 
 }
 
-module.exports = String_Matcher
+module.exports = stringmatcher;
 
 if (require.main == module) {
 
-    var pf = new String_Matcher()
+    var pf = new stringmatcher()
     var assert = require('assert');
     console.log(pf.scan('hello there'));
     assert(pf.scan('hello there!') == ['hello'], 'detects simple hello word')
