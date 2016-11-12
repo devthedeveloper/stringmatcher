@@ -13,6 +13,5 @@ var sm = new string_matcher()
 console.log(sm.scan('hello there!')) // returns [] 
 console.log(sm.add_word(['hello']) )// add method 
 console.log(sm.scan('hello there!')) // returns ['hello'] 
- 
 console.log(sm.remove_word('hello')) // returns true if removed 
 ```
