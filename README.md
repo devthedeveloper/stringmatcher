@@ -8,11 +8,11 @@ This package returns an array of matched words, or an empty array if none were f
 ### Example Usage
 
 ```js
-var String_Matcher = require('stringmatcher')
-var sm = new String_Matcher()
+var string_matcher = require('stringmatcher');
+var sm = new string_matcher()
 console.log(sm.scan('hello there!')) // returns [] 
-console.log(sm.add_word(['p'])) // add method 
-console.log(sm)
+console.log(sm.add_word(['hello']) )// add method 
 console.log(sm.scan('hello there!')) // returns ['hello'] 
-console.log(sm.remove_word('p')) // returns true if removed 
+ 
+console.log(sm.remove_word('hello')) // returns true if removed 
 ```
