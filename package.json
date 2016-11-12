@@ -1,6 +1,6 @@
 {
   "name": "stringmatcher",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This is a very small, and simple string matcher that scans for words or strings. Its inspired by the concept of machine learning.",
   "main": "stringmatcher.js",
   "scripts": {
