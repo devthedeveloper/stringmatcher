@@ -28,7 +28,7 @@
     "url": "https://github.com/devthedeveloper/stringmatcher/issues"
   },
   "homepage": "https://github.com/devthedeveloper/stringmatcher#readme",
-  "readme": "# stringmatcher\n\nThis is a very small, and simple string matcher that scans for words or strings. Its inspired by the concept of machine learning.\n\nThis version returns an array of matched words, or an empty array if none were found.\n\n### Example Usage\n\n```js\nvar string_matcher = require('String_Matcher');\nvar sm = new string_matcher()\nsm.scan('hello there!') // returns []\nsm.add(['hello']) // add method\nsm.scan('hello there!') // returns ['hello']\n\nsm.remove_word('hello') // returns true if removed\n```\n",
+  "readme": "# stringmatcher\n\nThis is a very small, and simple string matcher that scans for words or strings. Its inspired by the concept of machine learning.\n\nThis version returns an array of matched words, or an empty array if none were found.\n\n### Example Usage\n\n```js\nvar string_matcher = require('stringmatcher');\nvar sm = new string_matcher()\nconsole.log(sm.scan('hello there!')) // returns []\nconsole.log(sm.add_word(['hello'])) // add method\nconsole.log(sm.scan('hello there!')) // returns ['hello']\n\nconsole.log(sm.remove_word('hello')) // returns true if removed\n```\n",
   "readmeFilename": "README.md",
   "gitHead": "b823952263900ef66b1c78988d005d89ddb2678c",
   "_id": "stringmatcher@1.0.0",
